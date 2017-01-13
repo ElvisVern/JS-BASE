@@ -1,2 +1,2 @@
 # JS-BASE
-plugin with thw native javascript
+plugin with the native javascript
