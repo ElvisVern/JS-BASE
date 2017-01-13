@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog of Front-end</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<div class="top">
+	<div id="header">
+		<div class="logo"><h2>Elvis Blog</h2></div>
+		<div class="member">个人中心<i class="icon-caret-down" id="togleI"></i>
+		    <ul class="member_ul">
+		    	<li><i class="icon-circle-arrow-right"></i><a href="">设置</a></li>
+		    	<li><i class="icon-circle-arrow-right"></i><a href="">换肤</a></li>
+		    	<li><i class="icon-circle-arrow-right"></i><a href="">帮助</a></li>
+		    	<li><i class="icon-circle-arrow-right"></i><a href="">退出</a></li>
+		    </ul>
+		</div>
+		<div class="reg">注册</div>
+		<div class="login">登录</div>
+
+
+	</div>
+	</div>
+
+	<div id="login">
+		<h2 id="login-head">登录 <i class="icon-remove" id="lclose"></i></h2>
+		<div class="user">账　号:　<input type="text" name="user" class="text" autofocus="autofocus"></input>	</div>
+		<div class="pass">密　码:　<input type="password" name="password" class="pass"></input>	</div>
+		<div class="button"><input type="submit" class="submit" value="登录"></div>
+
+		<div class="other"><a href="">注册新用户</a>丨<a href="">忘记密码</a></div>
+	</div>
+	<div id="reg">
+		<form action="" name="form" id="form-reg">
+			<h2 id="reg-head">注册 <i class="icon-remove" id="rclose"></i></h2>
+			<dl>
+				<dd>　用户名: <input type="text" name="user" class="text" placeholder="请输入用户名，2~20位" required="required">
+					<span class="error error_user"><i class="icon-remove"></i> 不合法，请重新输入</span>
+					<span class="succ succ_user"><i class="icon-ok"></i> 可用</span>
+				</dd>
+				<dd>　　密码: <input type="password" name="pass" class="text" placeholder="字母或数字" required="required"></dd>
+				<dd>密码确认: <input type="password" name="nopass" class="text" placeholder="再次输入密码">
+					<span class="error error_nopass"><i class="icon-remove"></i> 密码不一致</span>
+					<span class="succ succ_nopass"><i class="icon-ok"></i></span>
+				</dd>
+				<dd>　　提问: <select name="ques" id="ques">
+								<option value="0">请选择</option>	
+								<option value="1">Your favorite of food?</option>	
+								<option value="2">Your date of birth?</option>	
+								<option value="2">Your career of personal?</option>		
+				</select></dd>
+				<dd>　　回答: <input type="text" name="answer" class="text"></dd>
+				<dd>电子邮件: <input type="text" name="email" class="text" autocomplete="off" required="required">
+					<span class="error error_email"><i class="icon-remove"></i> 邮件不合法</span>
+					<span class="succ succ_email"><i class="icon-ok"></i></span>
+					<ul class="all_email">
+						<li class="all_email_li"><span class="all_email_text"></span>@qq.com</li>
+						<li class="all_email_li"><span class="all_email_text"></span>@163.com</li>
+						<li class="all_email_li"><span class="all_email_text"></span>@sohu.com</li>
+						<li class="all_email_li"><span class="all_email_text"></span>@sina.com.cn</li>
+						<li class="all_email_li"><span class="all_email_text"></span>@gmail.com</li>
+					</ul>
+				</dd>
+				<dd class="birth">　　生日: <select name="year" id="year"><option value="0">Year</option></select>
+							<select name="month" id="month"><option value="0">Month</option></select>
+							<select name="day" id="day"><option value="0">Day</option></select>
+				</dd>
+				<dd id="ps">　　备注: <textarea name="ps" id=""></textarea></dd>
+				<dd class="tips">还可以输入<strong class="num">200</strong>字</dd>
+				<dd class="tips-ext" style="display: none;">已超过<strong class="num">20</strong>字,<span class="clear"> 清除</span></dd>
+				<dd><input type="button" name="sub" class="submit" value="注册"></dd>
+			</dl>
+		</form>
+	</div>
+	<div id="screen"></div>
+	
+	<!-- 页面主体 -->
+	<div id="main">
+		
+		<div id="sidebar">
+			<h2 class="sidebarh">Blog Title1</h2>
+			<ul>
+				<li><a href="">one</a></li>
+				<li><a href="">two</a></li>
+				<li><a href="">three</a></li>
+			</ul>
+			<h2 class="sidebarh">Blog Title2</h2>
+			<ul>
+				<li><a href="">one</a></li>
+				<li><a href="">two</a></li>
+				<li><a href="">three</a></li>
+			</ul>
+			<h2 class="sidebarh">Blog Title3</h2>
+			<ul>
+				<li><a href="">one</a></li>
+				<li><a href="">two</a></li>
+				<li><a href="">three</a></li>
+			</ul>
+		</div>
+		<div id="index">index</div>
+		<div class="clearfix"></div>
+		<div id="banner">
+			<img src="" alt="一" class="img-l">
+			<img src="" alt="二" class="img-l">
+			<img src="" alt="三" class="img-l">
+			<ul>
+				<li class="lun">●</li>
+				<li class="lun">●</li>
+				<li class="lun">●</li>
+			</ul>
+			<span></span>
+			<strong class="lun-text">SlideBox</strong>
+		</div>
+	</div>
+	
+
+
+<script src="js/tool.js"></script>
+<script src="js/base.js"></script>
+<script src="js/base_drag.js"></script>	
+<script src="js/index.js"></script>
+</body>
+</html>
